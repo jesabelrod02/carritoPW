@@ -1,0 +1,96 @@
+header{
+    width: auto;
+    background-color: azure;
+    height: 75px;
+    /*display: flex;*/
+}
+
+#logo{
+    position: relative;
+    display: inline; 
+
+}
+
+#logo img{
+    width: auto;
+    height: 75px;
+}
+
+h1{
+    position: relative;
+    display: inline; 
+
+.btn_Header{
+    border: none;
+    background-color:transparent;
+    font-size: 2rem;
+    font-weight: bolder;
+    margin: 1rem 1rem; 
+}
+
+.carousel-caption{
+    background-color:rgba(23, 23, 23, 0.521);
+}
+
+.h3_cat{
+    padding: 0.2rem 0;
+    background-color: rgba(129, 14, 244, 0.638);
+}
+
+#categorias{
+    flex-flow: row nowrap;
+}
+
+.card{
+    width: 25%;
+}
+
+
+main{
+    background-color: gray;
+}
+
+footer{
+    height: 175px; 
+    background-color: darkgray;
+}
+
+@media screen and (min-width: 321px) and (max-width: 600px){
+    .btn_Header{
+        font-weight: lighter;
+        color: grey;
+        margin: 0; 
+    }
+
+    #categorias{
+        flex-flow: row wrap;
+    }
+
+    .card{
+        width: 43%;
+    }
+}
+
+@media screen and (min-width: 130px) and (max-width: 320px) {
+    .btn_Header{
+        size: 1rem;
+        margin: 0;
+    }
+
+    header h2{
+        display: none;
+    }
+
+    #categorias{
+        flex-flow: row wrap;
+    }
+
+    .card{
+        font-weight: bolder;
+        width: 100%;
+    }
+
+    .card a{
+        display: none;
+    }
+}
